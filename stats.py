@@ -26,8 +26,9 @@ def mean(numbers):
     return sum(numbers) / len(numbers)
 
 def main():
-    numbers = [1, 2, 2, 3, 4]
-    
+    input_numbers = input("Enter a list of numbers separated by spaces: ")
+    numbers = list(map(float, input_numbers.split()))
+
     print("Numbers:", numbers)
     print("Median:", median(numbers))
     print("Mode:", mode(numbers))
